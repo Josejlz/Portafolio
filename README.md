@@ -1,6 +1,6 @@
 # Mi portafolio personal
 
-Mi nombre es Jose Laynez, y este es mi portafolio personal, hecho para prácticar mas acerca de los conceptos de desarrollo web y al mismo tiempo hacer un elemento escencial para un desarrollador. 
+Mi nombre es Jose Laynez, y este es mi portafolio personal, hecho para practicar mas acerca de los conceptos de desarrollo web y al mismo tiempo hacer un elemento esencial para un desarrollador. 
 
 Visible en https://portafoliojosejlz.netlify.app/
 

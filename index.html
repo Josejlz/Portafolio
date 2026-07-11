@@ -4,13 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de Jose Juan Laynez Zapeta, estudiante de Ingeniería en Ciencias y Sistemas.">
+    <meta property="og:title" content="Portafolio - Jose Juan Laynez Zapeta">
+    <meta property="og:image" content="/assets/foto1.png">
+    <meta name="description" content="Portafolio de Jose Juan Laynez Zapeta, estudiante de Ingeniería en Ciencias y Sistemas.">
+    <meta property="og:title" content="Portafolio - Jose Juan Laynez Zapeta">
+    <meta property="og:image" content="/assets/foto1.png">
     <title>Mi Portafolio</title>
     <link href="src/output.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
-    <link rel="stylesheet" href="https://jsdelivr.net">
 </head>
 
-<body class="h-screen bg-[url('/assets/bgV1.png')] bg-cover bg-center">
+<body class="min-h-screen bg-[url('/assets/bgV1.png')] bg-cover bg-center bg-no-repeat">
     <header class="top-0 z-50">
 
         <nav
@@ -19,7 +24,6 @@
                 <div class="relative flex h-16 items-center justify-between">
 
                     <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                        <div class="hidden sm:ml-6 sm:block">
                             <div class="flex space-x-4">
                                 <a href="#About" aria-current="page"
                                     class="font-sans rounded-md px-3 py-2 text-sm font-bold text-sky-950 hover:bg-white/5 hover:text-white">Sobre
@@ -30,7 +34,6 @@
                                     class="font-sans  rounded-md px-3 py-2 text-sm font-bold text-sky-950 hover:bg-white/5 hover:text-white">Proyectos</a>
                                 <a href="#Contact"
                                     class="font-sans rounded-md px-3 py-2 text-sm font-bold text-sky-950 hover:bg-white/5 hover:text-white">Contacto</a>
-                            </div>
                         </div>
                     </div>
 
@@ -41,23 +44,27 @@
 
     </header>
 
-    <main class="flex justify-center items-center flex-col sm:flex-row">
+    <main class="flex justify-center items-center p-6">
 
         <div
-            class="relative bg-white my-8 w-11/12 max-w-5xl h-[85%] rounded-3xl shadow-xl shadow-sky-200/40 border border-white/40 flex overflow-hidden">
+            class="w-full lg:w-[340px] b-gradient-to-b flex-shrink bg-white max-w-6xl h-[85vh] rounded-xl shadow-xl border border-white/40 overflow-hidden">
             <div
-                class="w-1/3 bg-gradient-to-b from-sky-50/50 to-indigo-50/30 p-8 flex flex-col justify-between border-r border-slate-100">
+                class="w-full lg:w-1/3 bg-gradient-to-b from-sky-50/50 to-indigo-50/30 p-8 flex flex-col justify-between border-r border-slate-100">
                 <div class="flex flex-col gap-4"> <!-- informacion personal y pequeña intro -->
-                    <div class="w-3/4 aspect-square bg-sky-400 rounded-2xl shadow-lg shadow-sky-200">
-                        <img src="assets/foto1.png" alt="Foto de perfil" class="object-cover rounded-2xl">
+                    <div class="w-full flex justify-center items-center">
+                        <div class=" w-48 aspect-square bg-sky-400 rounded-2xl overflow-hidden shadow-lg">
+                            <img src="assets/foto1.png" alt="Foto de perfil" class="object-cover w-full h-full">
+                        </div>
                     </div>
 
                     <div class="">
 
-                        <h1 class="font-sans text-xl font-black text-slate-800 tracking-tight mt-1">Jose Juan Laynez
+                        <h1 class="text-2xl font-black text-center text-slate-800 leading-tight">Jose Juan Laynez
                             Zapeta
                         </h1>
-                        <p class="font-sans text-xs font-semibold text-sky-600 uppercase tracking-wider mt-1">Estudiante
+                        <p
+                            class="font-sans text-xs text-center font-semibold text-sky-600 uppercase tracking-wider mt-1">
+                            Estudiante
                             de Ingeniería en Ciencias y Sistemas. </p>
                         <p class="font-sans text-sm text-slate-500 mt-4 leading-relaxed">
                             Me alegra que estés viendo esto. Este es mi portafolio personal, donde compartiré mis
@@ -74,41 +81,60 @@
             </div>
 
             <!-- Segunda columna-->
-            <div class="w-2/3 p-8 overflow-y-auto scroll-smooth space-y-24 content-section">
+            <div class="flex-1 p-8 overflow-y-auto space-y-12">
 
                 <!-- Sobre mi-->
-                <section id="About" class="pt-4">
-                    <h2 class="text-2xl font-black text-slate-800 mb-4 flex items-center gap-2">
-                        <span class="text-sky-500">■</span> Sobre mí
+                <section id="About" class="h-auto overflow-hidden mb-4">
+                    <h2 class="text-2xl font-black text-slate-800 mb-2 flex items-center gap-2">
+                        <span class="text-slate-500"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-user">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                                <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                            </svg> </span>Sobre mí
                     </h2>
-                    <p class="text-slate-600 leading-relaxed">
-                        Mi nombre es Jose Juan Laynez Zapeta, estudiante de Ingeniería en Ciencias y Sistemas en la
-                        Universidad de San Carlos de Guatemala. Me fascina resolver problemas complejos
-                        y aprender nuevas tecnologías.
-                    </p>
-
-                    <h3 class="text-xl font-black text-slate-800 mt-2 mb-2 flex items-center gap-2">
-                        Experiencia Laboral
-                    </h3>
-                    <p class="text-slate-600 leading-relaxed">
-                        Tengo experiencia en el área de call center, como agente de servicio al cliente. He trabajado en
-                        ambientes bilingües y de alta presión, en donde he podido desarrollar de mejor
-                        manera mis habilidades de comunicación, resolución de problemas, trabajo en equipo y manejo de
-                        estrés.
-                    </p>
-
-                    <div class="flex items-center justify-center w-full mt-2">
-                        <img src="assets/fotoenCall.jpg" alt="Foto en Call Center" class="absolute w-1/2 h-auto rounded-xl">
-
-                        </img>
+                    <div>
+                        <p class="text-slate-600 leading-relaxed">
+                            Mi nombre es Jose Juan Laynez Zapeta, estudiante de Ingeniería en Ciencias y Sistemas en la
+                            Universidad de San Carlos de Guatemala. Me fascina resolver problemas complejos
+                            y aprender nuevas tecnologías.
+                        </p>
+                        <div class="w-full">
+                            <div class="flex">
+                                <div class="mt-6">
+                                    <h3 class="px-2 py-2 bg-slate-100 rounded-t-lg font-bold text-slate inline-block">
+                                        Experiencia Laboral
+                                    </h3>
+                                </div>
+                            </div>
+                            <p class="text-slate px-2 py-2 bg-slate-100 rounded-b-lg rounded-tr-lg">
+                                Tengo experiencia en el área de call center, como agente de servicio al cliente. He
+                                trabajado en
+                                ambientes bilingües y de alta presión, en donde he podido desarrollar de mejor
+                                manera mis habilidades de comunicación, resolución de problemas, trabajo en equipo y
+                                manejo
+                                de
+                                estrés.
+                            </p>
+                        </div>
                     </div>
-
 
                 </section>
 
                 <section id="Skills">
                     <h2 class="text-2xl font-black text-slate-800 mb-4 flex items-center gap-2">
-                        <span class="text-sky-500">■</span> Habilidades
+                        <span class="text-slate-500"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-hammer">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M11.414 10l-7.383 7.418a2.091 2.091 0 0 0 0 2.967a2.11 2.11 0 0 0 2.976 0l7.407 -7.385" />
+                                <path
+                                    d="M18.121 15.293l2.586 -2.586a1 1 0 0 0 0 -1.414l-7.586 -7.586a1 1 0 0 0 -1.414 0l-2.586 2.586a1 1 0 0 0 0 1.414l7.586 7.586a1 1 0 0 0 1.414 0" />
+                            </svg> </span>Habilidades
                     </h2>
 
 
@@ -120,81 +146,84 @@
                     <div class="grid grid-cols-2 gap-3">
                         <div
                             class="p-3 bg-slate-50 rounded-xl border border-slate-100 font-mono text-sm text-slate-700 font-bold flex flex-row items-center gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="icon icon-tabler icons-tabler-outline icon-tabler-coffee">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path
-                                    d="M3 14c.83 .642 2.077 1.017 3.5 1c1.423 .017 2.67 -.358 3.5 -1c.83 -.642 2.077 -1.017 3.5 -1c1.423 -.017 2.67 .358 3.5 1" />
-                                <path d="M8 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
-                                <path d="M12 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
-                                <path d="M3 10h14v5a6 6 0 0 1 -6 6h-2a6 6 0 0 1 -6 -6v-5" />
-                                <path d="M16.746 16.726a3 3 0 1 0 .252 -5.555" />
-                            </svg> Java
+                            <span class="text-sky-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-coffee">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M3 14c.83 .642 2.077 1.017 3.5 1c1.423 .017 2.67 -.358 3.5 -1c.83 -.642 2.077 -1.017 3.5 -1c1.423 -.017 2.67 .358 3.5 1" />
+                                    <path d="M8 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+                                    <path d="M12 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+                                    <path d="M3 10h14v5a6 6 0 0 1 -6 6h-2a6 6 0 0 1 -6 -6v-5" />
+                                    <path d="M16.746 16.726a3 3 0 1 0 .252 -5.555" />
+                                </svg></span> Java
                         </div>
                         <div
                             class="p-3 bg-slate-50 rounded-xl border border-slate-100 font-mono text-sm text-slate-700 font-bold flex flex-row items-center gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="icon icon-tabler icons-tabler-outline icon-tabler-brand-cpp">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M18 12h4" />
-                                <path d="M20 10v4" />
-                                <path d="M11 12h4" />
-                                <path d="M13 10v4" />
-                                <path
-                                    d="M9 9a3 3 0 0 0 -3 -3h-.5a3.5 3.5 0 0 0 -3.5 3.5v5a3.5 3.5 0 0 0 3.5 3.5h.5a3 3 0 0 0 3 -3" />
-                            </svg> C++
+                            <span class="text-sky-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-brand-cpp">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M18 12h4" />
+                                    <path d="M20 10v4" />
+                                    <path d="M11 12h4" />
+                                    <path d="M13 10v4" />
+                                    <path
+                                        d="M9 9a3 3 0 0 0 -3 -3h-.5a3.5 3.5 0 0 0 -3.5 3.5v5a3.5 3.5 0 0 0 3.5 3.5h.5a3 3 0 0 0 3 -3" />
+                                </svg></span> C++
                         </div>
                         <div
                             class="p-3 bg-slate-50 rounded-xl border border-slate-100 font-mono text-sm text-slate-700 font-bold flex flex-row items-center gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="icon icon-tabler icons-tabler-outline icon-tabler-brand-html5">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5l16 0" />
-                                <path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
-                            </svg>
+                            <span class="text-sky-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-brand-html5">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5l16 0" />
+                                    <path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+                                </svg></span>
                             HTML
                         </div>
                         <div
                             class="p-3 bg-slate-50 rounded-xl border border-slate-100 font-mono text-sm text-slate-700 font-bold flex flex-row items-center gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="icon icon-tabler icons-tabler-outline icon-tabler-brand-css3">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5l16 0" />
-                                <path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
-                            </svg>CSS
+                            <span class="text-sky-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-brand-css3">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5l16 0" />
+                                    <path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+                                </svg></span>CSS
                         </div>
                     </div>
 
-                <h3 class="text-xl font-black text-slate-800 flex items-center gap-2 mt-4 mb-2">
-                    Lenguajes
-                </h3>      
+                    <h3 class="text-xl font-black text-slate-800 flex items-center gap-2 mt-4 mb-2">
+                        Lenguajes
+                    </h3>
 
-                    <div>  <span class="text-slate-800 text-md font-black">Español |</span>   Nativo</div>
-                    <div>  <span class="text-slate-800 text-md font-black">Inglés |</span>   Avanzado</div>
+                    <div> <span class="text-slate-800 text-md font-black">Español |</span> Nativo</div>
+                    <div> <span class="text-slate-800 text-md font-black">Inglés |</span> Avanzado</div>
                 </section>
 
                 <section id="Projects">
                     <h2 class="text-2xl font-black text-slate-800 mb-4 flex items-center gap-2">
-                        <span class="text-sky-500">■</span> Proyectos
+                        <span class="text-slate-800"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-pencil">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+                                <path d="M13.5 6.5l4 4" />
+                            </svg></span> Proyectos
                     </h2>
+                    <p class="text-slate-600">En progreso...</p>
                 </section>
             </div>
 
 
         </div>
-
-
-
-
-        <div></div>
 
     </main>
 
